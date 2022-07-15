@@ -19,3 +19,21 @@ for (let index = 0; index < buttons.length; index++) {
   button.classList.add("btn", "btn-primary", "shadow");
   document.getElementById("buttons").append(button);
 }
+
+const petrolClick = () => {
+  console.log("petrol clicked");
+  document.getElementById("price").value = "189";
+  document.getElementById("dropdownMenu2").innerHTML = "Petrol";
+};
+
+const dieselClick = () => {
+  console.log("diesel clicked");
+  document.getElementById("price").value = "195";
+  document.getElementById("dropdownMenu2").innerHTML = "Diesel";
+};
+
+// Drop down shit
+const petrolButton = document.getElementById("petrol");
+const dieselButton = document.getElementById("diesel");
+petrolButton.addEventListener("click", petrolClick);
+dieselButton.addEventListener("click", dieselClick);
