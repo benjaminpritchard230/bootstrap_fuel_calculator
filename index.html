@@ -12,34 +12,36 @@
 
 <body>
   <!-- Header -->
-
   <div class="row">
     <div class="col text-center bg-dark text-white">
       <div class="h1">Fuel Cost Calculator</div>
     </div>
   </div>
-
   <!-- Area for entry boxes and image -->
   <section class="p-5 pt-lg-5 text-center text-sm-start">
     <div class="container">
       <div class="d-md-flex align-items-center justify-content-between">
-
-
-
-
         <!-- Put entry boxes here -->
         <div>
-          <!-- Drop down button -->
+          <!-- Drop down button fuel -->
           <div class="dropdown pr-2 pt-2 pb-2">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Select fuel
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button" id="petrol">Petrol</button>
-              <button class="dropdown-item" type="button" id="diesel">Diesel</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="fuels">
             </div>
           </div>
+          <!-- Drop down button cars -->
+          <div class="dropdown pr-2 pt-2 pb-2">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Select car
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu3" id="cars">
+            </div>
+          </div>
+          <!-- Entry boxes -->
           <form>
             <div class="mb-3">
               <label for="vehicleMpg" class="form-label">Enter your vehicle mpg:</label>
@@ -53,15 +55,12 @@
               <label for="fuelPrice" class="form-label">Current fuel price in pence:</label>
               <input type="number" class="form-control" id="price" aria-describedby="emailHelp">
             </div>
-
           </form>
         </div>
         <img class="img-fluid w-50 d-none d-sm-block rounded shadow" src="petrol.jpg" alt="" />
       </div>
       <div class="d-sm-flex align-items-center justify-content-center">
-
         <div class="h3 m-3" id="cost">This journey would cost:</div>
-
       </div>
       <div class="d-sm-flex align-items-center justify-content-center">
         <div id="buttons"></div>
